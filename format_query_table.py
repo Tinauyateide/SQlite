@@ -57,7 +57,7 @@ c.executemany("INSERT INTO SGA_1_3_learners VALUES(?, ?, ?, ? )", student_list)
 print('We have inserted', c.rowcount,' records to the table')
 
 # to Query my table in data base
-c.execute("""SELECT * FROM SGA_1_3_learners""")
+c.execute("SELECT * FROM SGA_1_3_learners")
 
 # to fetch my table 
 items = c.fetchall()
